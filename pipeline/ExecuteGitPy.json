@@ -1,0 +1,33 @@
+{
+	"name": "ExecuteGitPy",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://adb-4117924097057613.13.azuredatabricks.net/api/2.1/jobs/run-now",
+					"method": "POST",
+					"headers": {
+						"Authorization": "Bearer dapi478914e8a1895620cf9002e68fb66a6a"
+					},
+					"body": {
+						"job_id": 910006193713861
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-07-25T05:05:30Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
