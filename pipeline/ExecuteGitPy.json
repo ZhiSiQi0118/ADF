@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://adb-4117924097057613.13.azuredatabricks.net/api/2.1/jobs/run-now",
+					"url": "https://adb-4117924097057613.13.azuredatabricks.net/api/2.1/jobs/runs/submit",
 					"method": "POST",
 					"headers": {
 						"Authorization": "Bearer dapi478914e8a1895620cf9002e68fb66a6a"
