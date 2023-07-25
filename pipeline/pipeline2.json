@@ -20,7 +20,288 @@
 					"headers": {
 						"Authorization": "Bearer dapi478914e8a1895620cf9002e68fb66a6a"
 					},
-					"body": "{\n  \"tasks\": [\n    {\n      \"task_key\": \"Task01\",\n      \"existing_cluster_id\": \"0621-091419-j1a5pt6s\",\n      \"notebook_task\": {\n        \"notebook_path\": \"test01\",\n        \"source\": \"Git\"\n      },\n  \"git_source\": {\n    \"git_url\": \"https://github.com/ZhiSiQi0118/ADF\",\n    \"git_provider\": \"gitHub\",\n    \"git_branch\": \"main\"\n  }\n  ]\n}"
+					"body": {
+						"tasks": [
+							{
+								"task_key": "Task_Key",
+								"depends_on": [
+									{
+										"task_key": "string"
+									}
+								],
+								"existing_cluster_id": "string",
+								"new_cluster": {
+									"cluster_name": "string",
+									"spark_version": "string",
+									"spark_conf": {
+										"property1": "string",
+										"property2": "string"
+									},
+									"azure_attributes": {
+										"log_analytics_info": {
+											"log_analytics_workspace_id": "string",
+											"log_analytics_primary_key": "string"
+										},
+										"first_on_demand": "1",
+										"availability": "SPOT_AZURE",
+										"spot_bid_max_price": "-1.0"
+									},
+									"node_type_id": "string",
+									"driver_node_type_id": "string",
+									"ssh_public_keys": [
+										"string"
+									],
+									"custom_tags": {
+										"property1": "string",
+										"property2": "string"
+									},
+									"cluster_log_conf": {
+										"dbfs": {
+											"destination": "string"
+										}
+									},
+									"init_scripts": [
+										{
+											"workspace": {
+												"destination": "string"
+											},
+											"dbfs": {
+												"destination": "string"
+											}
+										}
+									],
+									"spark_env_vars": {
+										"property1": "string",
+										"property2": "string"
+									},
+									"autotermination_minutes": 0,
+									"enable_elastic_disk": true,
+									"cluster_source": "UI",
+									"instance_pool_id": "string",
+									"policy_id": "string",
+									"enable_local_disk_encryption": true,
+									"driver_instance_pool_id": "string",
+									"workload_type": {
+										"clients": {
+											"notebooks": "true",
+											"jobs": "true"
+										}
+									},
+									"runtime_engine": "NULL",
+									"docker_image": {
+										"url": "string",
+										"basic_auth": {
+											"username": "string",
+											"password": "string"
+										}
+									},
+									"data_security_mode": "NONE",
+									"single_user_name": "string",
+									"num_workers": 0,
+									"autoscale": {
+										"min_workers": 0,
+										"max_workers": 0
+									}
+								},
+								"notebook_task": {
+									"notebook_path": "string",
+									"source": "WORKSPACE",
+									"base_parameters": {
+										"property1": "string",
+										"property2": "string"
+									}
+								},
+								"spark_jar_task": {
+									"main_class_name": "string",
+									"parameters": [
+										"string"
+									],
+									"jar_uri": "string"
+								},
+								"spark_python_task": {
+									"python_file": "string",
+									"source": "WORKSPACE",
+									"parameters": [
+										"string"
+									]
+								},
+								"spark_submit_task": {
+									"parameters": [
+										"string"
+									]
+								},
+								"pipeline_task": {
+									"pipeline_id": "string",
+									"full_refresh": false
+								},
+								"python_wheel_task": {
+									"package_name": "string",
+									"entry_point": "string",
+									"parameters": [
+										"string"
+									],
+									"named_parameters": {
+										"property1": "string",
+										"property2": "string"
+									}
+								},
+								"sql_task": {
+									"query": {
+										"query_id": "string"
+									},
+									"dashboard": {
+										"dashboard_id": "string",
+										"subscriptions": [
+											{
+												"user_name": "string",
+												"destination_id": "string"
+											}
+										],
+										"custom_subject": "string",
+										"pause_subscriptions": true
+									},
+									"alert": {
+										"alert_id": "string",
+										"subscriptions": [
+											{
+												"user_name": "string",
+												"destination_id": "string"
+											}
+										],
+										"pause_subscriptions": true
+									},
+									"file": {
+										"path": "string"
+									},
+									"parameters": {
+										"property1": "string",
+										"property2": "string"
+									},
+									"warehouse_id": "string"
+								},
+								"libraries": [
+									{
+										"jar": "string",
+										"egg": "string",
+										"pypi": {
+											"package": "string",
+											"repo": "string"
+										},
+										"maven": {
+											"coordinates": "string",
+											"repo": "string",
+											"exclusions": [
+												"string"
+											]
+										},
+										"cran": {
+											"package": "string",
+											"repo": "string"
+										},
+										"whl": "string"
+									}
+								],
+								"timeout_seconds": 0,
+								"health": {
+									"rules": [
+										{
+											"metric": "RUN_DURATION_SECONDS",
+											"op": "GREATER_THAN",
+											"value": 0
+										}
+									]
+								},
+								"email_notifications": {
+									"on_start": [
+										"string"
+									],
+									"on_success": [
+										"string"
+									],
+									"on_failure": [
+										"string"
+									],
+									"on_duration_warning_threshold_exceeded": [
+										"string"
+									],
+									"no_alert_for_skipped_runs": true
+								},
+								"notification_settings": {
+									"no_alert_for_skipped_runs": true,
+									"no_alert_for_canceled_runs": true,
+									"alert_on_last_attempt": true
+								}
+							}
+						],
+						"run_name": "string",
+						"git_source": {
+							"git_url": "string",
+							"git_provider": "gitHub",
+							"git_branch": "string",
+							"git_tag": "string",
+							"git_commit": "string"
+						},
+						"timeout_seconds": 0,
+						"health": {
+							"rules": [
+								{
+									"metric": "RUN_DURATION_SECONDS",
+									"op": "GREATER_THAN",
+									"value": 0
+								}
+							]
+						},
+						"email_notifications": {
+							"on_start": [
+								"string"
+							],
+							"on_success": [
+								"string"
+							],
+							"on_failure": [
+								"string"
+							],
+							"on_duration_warning_threshold_exceeded": [
+								"string"
+							],
+							"no_alert_for_skipped_runs": true
+						},
+						"webhook_notifications": {
+							"on_start": [
+								{
+									"id": "string"
+								}
+							],
+							"on_success": [
+								{
+									"id": "string"
+								}
+							],
+							"on_failure": [
+								{
+									"id": "string"
+								}
+							],
+							"on_duration_warning_threshold_exceeded": [
+								{
+									"id": "string"
+								}
+							]
+						},
+						"notification_settings": {
+							"no_alert_for_skipped_runs": true,
+							"no_alert_for_canceled_runs": true
+						},
+						"idempotency_token": "string",
+						"access_control_list": [
+							{
+								"user_name": "string",
+								"group_name": "string",
+								"service_principal_name": "string",
+								"permission_level": "CAN_MANAGE"
+							}
+						]
+					}
 				}
 			}
 		],
