@@ -1,0 +1,31 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://adb-4117924097057613.13.azuredatabricks.net/api/2.1/jobs/runs/submit",
+					"method": "POST",
+					"headers": {
+						"Authorization": "Bearer dapi843d1f3bba3aa21e30bf169bbbb44da0"
+					},
+					"body": "{\n  \"tasks\": [\n    {\n      \"task_key\": \"Task01\",\n      \"existing_cluster_id\": \"0621-091419-j1a5pt6s\",\n      \"notebook_task\": {\n        \"notebook_path\": \"test01.py\",\n        \"source\": \"Git\"\n      },\n  \"git_source\": {\n    \"git_url\": \"https://github.com/ZhiSiQi0118/ADF\",\n    \"git_provider\": \"gitHub\",\n    \"git_branch\": \"main\"\n  }\n  ]\n}"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-07-25T05:05:30Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

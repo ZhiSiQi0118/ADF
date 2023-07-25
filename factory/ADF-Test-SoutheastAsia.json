@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Test-SoutheastAsia",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "70a4b7c2-453e-4779-9dd4-3e212d0b16dc",
+		"tenantId": "f3fee0a2-ef82-4b96-93a3-ee793eb1ee3f"
+	}
+}
