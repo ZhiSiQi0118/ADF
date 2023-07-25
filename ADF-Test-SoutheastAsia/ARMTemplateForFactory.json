@@ -133,61 +133,61 @@
 										"task_key": "Task_Key",
 										"depends_on": [
 											{
-												"task_key": "string"
+												"task_key": ""
 											}
 										],
-										"existing_cluster_id": "string",
+										"existing_cluster_id": "0621-091419-j1a5pt6s",
 										"new_cluster": {
-											"cluster_name": "string",
-											"spark_version": "string",
+											"cluster_name": "",
+											"spark_version": "",
 											"spark_conf": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											},
 											"azure_attributes": {
 												"log_analytics_info": {
-													"log_analytics_workspace_id": "string",
-													"log_analytics_primary_key": "string"
+													"log_analytics_workspace_id": "",
+													"log_analytics_primary_key": ""
 												},
 												"first_on_demand": "1",
 												"availability": "SPOT_AZURE",
 												"spot_bid_max_price": "-1.0"
 											},
-											"node_type_id": "string",
-											"driver_node_type_id": "string",
+											"node_type_id": "",
+											"driver_node_type_id": "",
 											"ssh_public_keys": [
-												"string"
+												""
 											],
 											"custom_tags": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											},
 											"cluster_log_conf": {
 												"dbfs": {
-													"destination": "string"
+													"destination": ""
 												}
 											},
 											"init_scripts": [
 												{
 													"workspace": {
-														"destination": "string"
+														"destination": ""
 													},
 													"dbfs": {
-														"destination": "string"
+														"destination": ""
 													}
 												}
 											],
 											"spark_env_vars": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											},
 											"autotermination_minutes": 0,
 											"enable_elastic_disk": true,
 											"cluster_source": "UI",
-											"instance_pool_id": "string",
-											"policy_id": "string",
+											"instance_pool_id": "",
+											"policy_id": "",
 											"enable_local_disk_encryption": true,
-											"driver_instance_pool_id": "string",
+											"driver_instance_pool_id": "",
 											"workload_type": {
 												"clients": {
 													"notebooks": "true",
@@ -196,14 +196,14 @@
 											},
 											"runtime_engine": "NULL",
 											"docker_image": {
-												"url": "string",
+												"url": "",
 												"basic_auth": {
-													"username": "string",
-													"password": "string"
+													"username": "",
+													"password": ""
 												}
 											},
 											"data_security_mode": "NONE",
-											"single_user_name": "string",
+											"single_user_name": "",
 											"num_workers": 0,
 											"autoscale": {
 												"min_workers": 0,
@@ -211,101 +211,101 @@
 											}
 										},
 										"notebook_task": {
-											"notebook_path": "string",
-											"source": "WORKSPACE",
+											"notebook_path": "test01",
+											"source": "GIT",
 											"base_parameters": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											}
 										},
 										"spark_jar_task": {
-											"main_class_name": "string",
+											"main_class_name": "",
 											"parameters": [
-												"string"
+												""
 											],
-											"jar_uri": "string"
+											"jar_uri": ""
 										},
 										"spark_python_task": {
-											"python_file": "string",
+											"python_file": "",
 											"source": "WORKSPACE",
 											"parameters": [
-												"string"
+												""
 											]
 										},
 										"spark_submit_task": {
 											"parameters": [
-												"string"
+												""
 											]
 										},
 										"pipeline_task": {
-											"pipeline_id": "string",
+											"pipeline_id": "",
 											"full_refresh": false
 										},
 										"python_wheel_task": {
-											"package_name": "string",
-											"entry_point": "string",
+											"package_name": "",
+											"entry_point": "",
 											"parameters": [
-												"string"
+												""
 											],
 											"named_parameters": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											}
 										},
 										"sql_task": {
 											"query": {
-												"query_id": "string"
+												"query_id": ""
 											},
 											"dashboard": {
-												"dashboard_id": "string",
+												"dashboard_id": "",
 												"subscriptions": [
 													{
-														"user_name": "string",
-														"destination_id": "string"
+														"user_name": "",
+														"destination_id": ""
 													}
 												],
-												"custom_subject": "string",
+												"custom_subject": "",
 												"pause_subscriptions": true
 											},
 											"alert": {
-												"alert_id": "string",
+												"alert_id": "",
 												"subscriptions": [
 													{
-														"user_name": "string",
-														"destination_id": "string"
+														"user_name": "",
+														"destination_id": ""
 													}
 												],
 												"pause_subscriptions": true
 											},
 											"file": {
-												"path": "string"
+												"path": ""
 											},
 											"parameters": {
-												"property1": "string",
-												"property2": "string"
+												"property1": "",
+												"property2": ""
 											},
-											"warehouse_id": "string"
+											"warehouse_id": ""
 										},
 										"libraries": [
 											{
-												"jar": "string",
-												"egg": "string",
+												"jar": "",
+												"egg": "",
 												"pypi": {
-													"package": "string",
-													"repo": "string"
+													"package": "",
+													"repo": ""
 												},
 												"maven": {
-													"coordinates": "string",
-													"repo": "string",
+													"coordinates": "",
+													"repo": "",
 													"exclusions": [
-														"string"
+														""
 													]
 												},
 												"cran": {
-													"package": "string",
-													"repo": "string"
+													"package": "",
+													"repo": ""
 												},
-												"whl": "string"
+												"whl": ""
 											}
 										],
 										"timeout_seconds": 0,
@@ -320,16 +320,16 @@
 										},
 										"email_notifications": {
 											"on_start": [
-												"string"
+												""
 											],
 											"on_success": [
-												"string"
+												""
 											],
 											"on_failure": [
-												"string"
+												""
 											],
 											"on_duration_warning_threshold_exceeded": [
-												"string"
+												""
 											],
 											"no_alert_for_skipped_runs": true
 										},
@@ -340,13 +340,11 @@
 										}
 									}
 								],
-								"run_name": "string",
+								"run_name": "",
 								"git_source": {
-									"git_url": "string",
+									"git_url": "https://github.com/ZhiSiQi0118/ADF",
 									"git_provider": "gitHub",
-									"git_branch": "string",
-									"git_tag": "string",
-									"git_commit": "string"
+									"git_branch": "main"
 								},
 								"timeout_seconds": 0,
 								"health": {
@@ -360,38 +358,38 @@
 								},
 								"email_notifications": {
 									"on_start": [
-										"string"
+										""
 									],
 									"on_success": [
-										"string"
+										""
 									],
 									"on_failure": [
-										"string"
+										""
 									],
 									"on_duration_warning_threshold_exceeded": [
-										"string"
+										""
 									],
 									"no_alert_for_skipped_runs": true
 								},
 								"webhook_notifications": {
 									"on_start": [
 										{
-											"id": "string"
+											"id": ""
 										}
 									],
 									"on_success": [
 										{
-											"id": "string"
+											"id": ""
 										}
 									],
 									"on_failure": [
 										{
-											"id": "string"
+											"id": ""
 										}
 									],
 									"on_duration_warning_threshold_exceeded": [
 										{
-											"id": "string"
+											"id": ""
 										}
 									]
 								},
@@ -399,12 +397,12 @@
 									"no_alert_for_skipped_runs": true,
 									"no_alert_for_canceled_runs": true
 								},
-								"idempotency_token": "string",
+								"idempotency_token": "",
 								"access_control_list": [
 									{
-										"user_name": "string",
-										"group_name": "string",
-										"service_principal_name": "string",
+										"user_name": "",
+										"group_name": "",
+										"service_principal_name": "",
 										"permission_level": "CAN_MANAGE"
 									}
 								]
