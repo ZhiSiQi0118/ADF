@@ -20,7 +20,7 @@
 					"headers": {
 						"Authorization": "Bearer dapi843d1f3bba3aa21e30bf169bbbb44da0"
 					},
-					"body": "{\n  \"tasks\": [\n    {\n      \"task_key\": \"Task01\",\n      \"existing_cluster_id\": \"0621-091419-j1a5pt6s\",\n      \"notebook_task\": {\n        \"notebook_path\": \"test01.py\",\n        \"source\": \"Git\"\n      },\n  \"git_source\": {\n    \"git_url\": \"https://github.com/ZhiSiQi0118/ADF\",\n    \"git_provider\": \"gitHub\",\n    \"git_branch\": \"main\"\n  }\n  ]\n}"
+					"body": "{\n  \"tasks\": [\n    {\n      \"task_key\": \"Task01\",\n      \"existing_cluster_id\": \"0621-091419-j1a5pt6s\",\n      \"notebook_task\": {\n        \"notebook_path\": \"test01\",\n        \"source\": \"Git\"\n      },\n  \"git_source\": {\n    \"git_url\": \"https://github.com/ZhiSiQi0118/ADF\",\n    \"git_provider\": \"gitHub\",\n    \"git_branch\": \"main\"\n  }\n  ]\n}"
 				}
 			}
 		],
