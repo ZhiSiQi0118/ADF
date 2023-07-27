@@ -123,6 +123,65 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/ExecuteGitPython')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Web1",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": "https://adb-4117924097057613.13.azuredatabricks.net/api/2.1/jobs/runs/submit",
+							"method": "POST",
+							"headers": {
+								"Authorization": "Bearer dapi478914e8a1895620cf9002e68fb66a6a"
+							},
+							"body": {
+								"tasks": [
+									{
+										"task_key": "test01",
+										"notebook_task": {
+											"notebook_path": "111/test01",
+											"source": "GIT"
+										},
+										"existing_cluster_id": "0621-091419-j1a5pt6s",
+										"timeout_seconds": 0,
+										"notification_settings": {
+											"no_alert_for_skipped_runs": false,
+											"no_alert_for_canceled_runs": false,
+											"alert_on_last_attempt": false
+										}
+									}
+								],
+								"git_source": {
+									"git_url": "https://github.com/ZhiSiQi0118/ADF",
+									"git_provider": "gitHub",
+									"git_branch": "main"
+								}
+							}
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {},
+					"cancelAfter": {}
+				},
+				"annotations": [],
+				"lastPublishTime": "2023-07-25T05:05:30Z"
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
