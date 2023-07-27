@@ -150,8 +150,8 @@
 								"tasks": [
 									{
 										"task_key": "test01",
-										"notebook_task": {
-											"notebook_path": "111/test01",
+										"spark_python_task": {
+											"python_file": "111/test01.py",
 											"source": "GIT"
 										},
 										"existing_cluster_id": "0621-091419-j1a5pt6s",
