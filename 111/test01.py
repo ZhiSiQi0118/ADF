@@ -4,4 +4,5 @@
 # COMMAND ----------
 
 import sys
-print("\n".join(sys.path))
+def test():
+ print("\n".join(sys.path))
