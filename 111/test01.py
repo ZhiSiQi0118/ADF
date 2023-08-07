@@ -2,7 +2,7 @@
 # MAGIC CREATE WIDGET TEXT ADFParameter DEFAULT ""
 
 # COMMAND ----------
-
-import sys
+import pyspark
+from pyspark.sql import SparkSession
 def test():
- print("\n".join(sys.path))
+ spark.sql("CREATE DATABASE IF NOT EXISTS ct1")
