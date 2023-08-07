@@ -1,4 +1,4 @@
 # MAGIC %sql
 # MAGIC SELECT * FROM shouce01
 import test01
-test01.test()
+print(test01.test(1,2))
