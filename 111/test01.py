@@ -9,9 +9,8 @@ spark = SparkSession \
     .config("spark.some.config.option", "some-value") \
     .getOrCreate()
 def ctbl():
-    spark.sql("CREATE TABLE ct.e"
+    spark.sql("CREATE TABLE ct.f"
           "("
             "name STRING"
           ")"
           )
-ctbl()
