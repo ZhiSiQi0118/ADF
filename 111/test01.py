@@ -10,7 +10,7 @@ spark = SparkSession \
     .getOrCreate()
 #sc = SparkContext.getOrCreate()
 def ctbl():
-    spark.sql("CREATE TABLE ct.f"
+    spark.sql("CREATE TABLE ct.q"
           "("
             "name STRING"
           ")"
