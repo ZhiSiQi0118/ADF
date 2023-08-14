@@ -4,5 +4,4 @@
 # COMMAND ----------
 
 def test(a,b):
- c=a+b
- return c
+ return print(a+b)
