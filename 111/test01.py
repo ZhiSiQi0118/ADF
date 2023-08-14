@@ -3,7 +3,7 @@
 
 # COMMAND ----------
 def ctbl():
-    spark.sql("CREATE TABLE ct.a"
+    spark.sql("CREATE TABLE ct.c"
           "("
             "name STRING"
           ")"
