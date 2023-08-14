@@ -2,6 +2,9 @@
 # MAGIC CREATE WIDGET TEXT ADFParameter DEFAULT ""
 
 # COMMAND ----------
-
-def test(a,b):
- return print(a+b)
+def ctbl(a):
+    spark.sql("CREATE TABLE ct.a"
+          "("
+            "name STRING"
+          ")"
+          )
