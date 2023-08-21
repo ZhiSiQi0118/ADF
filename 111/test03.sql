@@ -1,2 +1,2 @@
 -- Databricks notebook source
-INSERT INTO ct.qq VALUES ("databricks")
+INSERT INTO ct.q VALUES ("databricks")
